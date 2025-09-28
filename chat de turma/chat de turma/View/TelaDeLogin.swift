@@ -10,6 +10,7 @@ import SwiftUI
 struct TelaDeLogin: View {
     @State var nome:String = ""
     @State var senha:String = ""
+    @State var pantryID:String = ""
     
     var body: some View {
         VStack(alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/, spacing: 10) {
@@ -37,14 +38,27 @@ struct TelaDeLogin: View {
                     
                     TextField("Escreva Aqui", text: $senha)
                 }
+                
+                VStack(alignment: .leading) {
+                    Text("PantryID:")
+                        .font(.subheadline)
+                    
+                    TextField("Escreva Aqui", text: $pantryID)
+                }
            }
-            .frame(height: 200)
+            .frame(height: 300)
             .scrollContentBackground(Visibility.hidden)
             
             // Botões
             Button(
                 action: {
-                    print("Entrar test")
+                    UserDefaults.standard.setValue(pantryID, forKey: "PantryID")
+                    
+                    // Remover depois!
+                    print("PantryID: \(UserDefaults.standard.string(forKey: "PantryID")!)")
+                    
+                    PantryServiceTest.Test1()
+                    // Remover depois!
                     
                 },
                 label: {
@@ -54,22 +68,6 @@ struct TelaDeLogin: View {
                         .padding(.horizontal,67)
                         .overlay{
                             Text("Entrar")
-                                .foregroundStyle(Color.white)
-                        }
-                }
-            )
-            
-            Button(
-                action: {
-                    print("login test")
-                },
-                label: {
-                    RoundedRectangle(cornerRadius: 67.69)
-                        .frame(height:35.69)
-                        .foregroundStyle(Color.orange)
-                        .padding(.horizontal,67)
-                        .overlay{
-                            Text("Entrar com google")
                                 .foregroundStyle(Color.white)
                         }
                 }

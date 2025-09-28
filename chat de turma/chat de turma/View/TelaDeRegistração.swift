@@ -13,6 +13,7 @@ struct TelaDeRegistracao: View {
     @State var email:String = ""
     @State var tipo:tipoDeConta = .aluno
     @State var codigo:String = ""
+    @State var pantryID:String = ""
     
     var body: some View {
         VStack {
@@ -56,6 +57,14 @@ struct TelaDeRegistracao: View {
                             TextField("Escreva Aqui", text: $codigo)
                         }
                     }
+                }
+                
+                // Entradas de Texto finais
+                VStack {
+                    Text("PantryID")
+                        .font(.system(size: 16, weight: .bold))
+                    
+                    TextField("Escreva Aqui", text: $pantryID)
                 }
             }
             // Fim de Lista

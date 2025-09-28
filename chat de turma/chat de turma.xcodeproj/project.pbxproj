@@ -23,6 +23,10 @@
 		CE85FD342E84AFDC00D47456 /* PantryService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE85FD272E84AFDB00D47456 /* PantryService.swift */; };
 		CE85FD352E84AFDC00D47456 /* loginHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE85FD292E84AFDC00D47456 /* loginHandler.swift */; };
 		CE85FD372E84B92200D47456 /* TelaPrincipal.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE85FD362E84B92200D47456 /* TelaPrincipal.swift */; };
+		CE85FD392E85BF8400D47456 /* TelaNotificações.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE85FD382E85BF8400D47456 /* TelaNotificações.swift */; };
+		CE85FD3C2E85C02E00D47456 /* notificacao.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE85FD3B2E85C02E00D47456 /* notificacao.swift */; };
+		CE85FD422E8927F500D47456 /* errosPantry.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE85FD412E8927F500D47456 /* errosPantry.swift */; };
+		CE85FD442E893CFC00D47456 /* PantryServiceTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE85FD432E893CFC00D47456 /* PantryServiceTest.swift */; };
 		CED0DC3D2E836C57006CC905 /* TelaDeLogin.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED0DC3C2E836C57006CC905 /* TelaDeLogin.swift */; };
 		CED0DC3F2E84ADCE006CC905 /* TelaDeRegistração.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED0DC3E2E84ADCE006CC905 /* TelaDeRegistração.swift */; };
 /* End PBXBuildFile section */
@@ -45,6 +49,10 @@
 		CE85FD272E84AFDB00D47456 /* PantryService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PantryService.swift; sourceTree = "<group>"; };
 		CE85FD292E84AFDC00D47456 /* loginHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = loginHandler.swift; sourceTree = "<group>"; };
 		CE85FD362E84B92200D47456 /* TelaPrincipal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TelaPrincipal.swift; sourceTree = "<group>"; };
+		CE85FD382E85BF8400D47456 /* TelaNotificações.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TelaNotificações.swift"; sourceTree = "<group>"; };
+		CE85FD3B2E85C02E00D47456 /* notificacao.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = notificacao.swift; sourceTree = "<group>"; };
+		CE85FD412E8927F500D47456 /* errosPantry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = errosPantry.swift; sourceTree = "<group>"; };
+		CE85FD432E893CFC00D47456 /* PantryServiceTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PantryServiceTest.swift; sourceTree = "<group>"; };
 		CED0DC3C2E836C57006CC905 /* TelaDeLogin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TelaDeLogin.swift; sourceTree = "<group>"; };
 		CED0DC3E2E84ADCE006CC905 /* TelaDeRegistração.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TelaDeRegistração.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -79,6 +87,7 @@
 		CE581E092E78C497005C6F6F /* chat de turma */ = {
 			isa = PBXGroup;
 			children = (
+				CE85FD3A2E85BF9500D47456 /* Components */,
 				CE85FD242E84AFDB00D47456 /* Erros */,
 				CE85FD282E84AFDC00D47456 /* Handlers */,
 				CE85FD182E84AFDB00D47456 /* Models */,
@@ -135,6 +144,7 @@
 			isa = PBXGroup;
 			children = (
 				CE85FD252E84AFDB00D47456 /* errosLogin.swift */,
+				CE85FD412E8927F500D47456 /* errosPantry.swift */,
 			);
 			path = Erros;
 			sourceTree = "<group>";
@@ -143,6 +153,7 @@
 			isa = PBXGroup;
 			children = (
 				CE85FD272E84AFDB00D47456 /* PantryService.swift */,
+				CE85FD432E893CFC00D47456 /* PantryServiceTest.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -155,12 +166,21 @@
 			path = Handlers;
 			sourceTree = "<group>";
 		};
+		CE85FD3A2E85BF9500D47456 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				CE85FD3B2E85C02E00D47456 /* notificacao.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
 		CED0DC3B2E836BA2006CC905 /* View */ = {
 			isa = PBXGroup;
 			children = (
 				CED0DC3C2E836C57006CC905 /* TelaDeLogin.swift */,
 				CED0DC3E2E84ADCE006CC905 /* TelaDeRegistração.swift */,
 				CE85FD362E84B92200D47456 /* TelaPrincipal.swift */,
+				CE85FD382E85BF8400D47456 /* TelaNotificações.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -239,6 +259,8 @@
 				CE85FD312E84AFDC00D47456 /* canalViewModel.swift in Sources */,
 				CE581E0B2E78C497005C6F6F /* chat_de_turmaApp.swift in Sources */,
 				CE85FD342E84AFDC00D47456 /* PantryService.swift in Sources */,
+				CE85FD422E8927F500D47456 /* errosPantry.swift in Sources */,
+				CE85FD442E893CFC00D47456 /* PantryServiceTest.swift in Sources */,
 				CE85FD2E2E84AFDC00D47456 /* conversa.swift in Sources */,
 				CE85FD322E84AFDC00D47456 /* forumViewModel.swift in Sources */,
 				CE85FD372E84B92200D47456 /* TelaPrincipal.swift in Sources */,
@@ -247,9 +269,11 @@
 				CE85FD302E84AFDC00D47456 /* directViewModel.swift in Sources */,
 				CE85FD352E84AFDC00D47456 /* loginHandler.swift in Sources */,
 				CE85FD2D2E84AFDC00D47456 /* usuario.swift in Sources */,
+				CE85FD392E85BF8400D47456 /* TelaNotificações.swift in Sources */,
 				CE85FD332E84AFDC00D47456 /* errosLogin.swift in Sources */,
 				CED0DC3F2E84ADCE006CC905 /* TelaDeRegistração.swift in Sources */,
 				CE85FD2C2E84AFDC00D47456 /* mensagem.swift in Sources */,
+				CE85FD3C2E85C02E00D47456 /* notificacao.swift in Sources */,
 				CE85FD2A2E84AFDC00D47456 /* mensagemConteudo.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
