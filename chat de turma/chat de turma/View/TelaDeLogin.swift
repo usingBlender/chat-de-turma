@@ -10,7 +10,7 @@ import SwiftUI
 struct TelaDeLogin: View {
     @State var nome:String = ""
     @State var senha:String = ""
-    @State var pantryID:String = ""
+    @State var pantryID:String = "fcfd1dd1-34a5-4a0c-b3b7-22d84b8de779"
     
     var body: some View {
         VStack(alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/, spacing: 10) {
