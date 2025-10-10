@@ -8,8 +8,7 @@
 import SwiftUI
 
 enum TipoDeNotificacao:String {
-    case forum = "Mensagens"
-    case direto = "Mensagens"
+    case forum, direto = "Mensagens"
     case canal = "Avisos"
 }
 
@@ -19,7 +18,7 @@ struct Notificacao: View {
     var icone:String {
         switch tipo {
         case .canal:
-            return "rectangle.3.group.bubble"
+            return "rectangle.3.group.bubble.fill"
         case .direto:
             return "bubble.left.and.text.bubble.right.fill"
         case .forum:
@@ -59,10 +58,11 @@ struct Notificacao: View {
     
     var body: some View {
         ZStack {
-            Rectangle()
+            RoundedRectangle(cornerRadius: 25)
+                .strokeBorder(.black, lineWidth: 2)
                 .frame(height: 100)
                 .padding(.horizontal)
-                .foregroundStyle(Color.gray.opacity(0.3))
+                .foregroundStyle(.white)
             
             HStack {
                 ZStack(alignment: .topTrailing) {
@@ -99,5 +99,5 @@ struct Notificacao: View {
 }
 
 #Preview {
-    Notificacao(tipo: .canal)
+    Notificacao(tipo: .canal, quantia: 3)
 }

@@ -9,8 +9,24 @@ import SwiftUI
 
 struct TelaNotificacoes: View {
     var body: some View {
-        ScrollView(.vertical) {
-            VStack {
+        VStack {
+            Text("Noticias")
+                .font(.system(size: 20, weight: .bold))
+                .padding(.top)
+            
+            Rectangle()
+                .frame(height: 2)
+                .padding(.horizontal)
+                .padding(.bottom)
+            
+            ScrollView(.vertical) {
+                VStack {
+                    Notificacao(tipo: .canal, quantia: 3)
+                    
+                    Notificacao(tipo: .direto, quantia: 47)
+                    
+                    Notificacao(tipo: .forum, quantia: 39)
+                }
             }
         }
     }

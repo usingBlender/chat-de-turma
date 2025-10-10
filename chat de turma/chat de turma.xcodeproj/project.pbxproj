@@ -27,6 +27,9 @@
 		CE85FD3C2E85C02E00D47456 /* notificacao.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE85FD3B2E85C02E00D47456 /* notificacao.swift */; };
 		CE85FD422E8927F500D47456 /* errosPantry.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE85FD412E8927F500D47456 /* errosPantry.swift */; };
 		CE85FD442E893CFC00D47456 /* PantryServiceTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE85FD432E893CFC00D47456 /* PantryServiceTest.swift */; };
+		CE85FD462E98763800D47456 /* mensagemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE85FD452E98763800D47456 /* mensagemView.swift */; };
+		CE85FD482E9884D700D47456 /* TelaForum.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE85FD472E9884D700D47456 /* TelaForum.swift */; };
+		CE85FD4A2E98893B00D47456 /* closerButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE85FD492E98893B00D47456 /* closerButton.swift */; };
 		CED0DC3D2E836C57006CC905 /* TelaDeLogin.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED0DC3C2E836C57006CC905 /* TelaDeLogin.swift */; };
 		CED0DC3F2E84ADCE006CC905 /* TelaDeRegistração.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED0DC3E2E84ADCE006CC905 /* TelaDeRegistração.swift */; };
 /* End PBXBuildFile section */
@@ -53,6 +56,9 @@
 		CE85FD3B2E85C02E00D47456 /* notificacao.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = notificacao.swift; sourceTree = "<group>"; };
 		CE85FD412E8927F500D47456 /* errosPantry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = errosPantry.swift; sourceTree = "<group>"; };
 		CE85FD432E893CFC00D47456 /* PantryServiceTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PantryServiceTest.swift; sourceTree = "<group>"; };
+		CE85FD452E98763800D47456 /* mensagemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mensagemView.swift; sourceTree = "<group>"; };
+		CE85FD472E9884D700D47456 /* TelaForum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TelaForum.swift; sourceTree = "<group>"; };
+		CE85FD492E98893B00D47456 /* closerButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = closerButton.swift; sourceTree = "<group>"; };
 		CED0DC3C2E836C57006CC905 /* TelaDeLogin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TelaDeLogin.swift; sourceTree = "<group>"; };
 		CED0DC3E2E84ADCE006CC905 /* TelaDeRegistração.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TelaDeRegistração.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -170,6 +176,8 @@
 			isa = PBXGroup;
 			children = (
 				CE85FD3B2E85C02E00D47456 /* notificacao.swift */,
+				CE85FD452E98763800D47456 /* mensagemView.swift */,
+				CE85FD492E98893B00D47456 /* closerButton.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -181,6 +189,7 @@
 				CED0DC3E2E84ADCE006CC905 /* TelaDeRegistração.swift */,
 				CE85FD362E84B92200D47456 /* TelaPrincipal.swift */,
 				CE85FD382E85BF8400D47456 /* TelaNotificações.swift */,
+				CE85FD472E9884D700D47456 /* TelaForum.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -257,6 +266,7 @@
 			files = (
 				CED0DC3D2E836C57006CC905 /* TelaDeLogin.swift in Sources */,
 				CE85FD312E84AFDC00D47456 /* canalViewModel.swift in Sources */,
+				CE85FD4A2E98893B00D47456 /* closerButton.swift in Sources */,
 				CE581E0B2E78C497005C6F6F /* chat_de_turmaApp.swift in Sources */,
 				CE85FD342E84AFDC00D47456 /* PantryService.swift in Sources */,
 				CE85FD422E8927F500D47456 /* errosPantry.swift in Sources */,
@@ -270,10 +280,12 @@
 				CE85FD352E84AFDC00D47456 /* loginHandler.swift in Sources */,
 				CE85FD2D2E84AFDC00D47456 /* usuario.swift in Sources */,
 				CE85FD392E85BF8400D47456 /* TelaNotificações.swift in Sources */,
+				CE85FD482E9884D700D47456 /* TelaForum.swift in Sources */,
 				CE85FD332E84AFDC00D47456 /* errosLogin.swift in Sources */,
 				CED0DC3F2E84ADCE006CC905 /* TelaDeRegistração.swift in Sources */,
 				CE85FD2C2E84AFDC00D47456 /* mensagem.swift in Sources */,
 				CE85FD3C2E85C02E00D47456 /* notificacao.swift in Sources */,
+				CE85FD462E98763800D47456 /* mensagemView.swift in Sources */,
 				CE85FD2A2E84AFDC00D47456 /* mensagemConteudo.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

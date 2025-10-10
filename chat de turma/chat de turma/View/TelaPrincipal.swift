@@ -16,18 +16,18 @@ struct TelaPrincipal: View {
     
     var body: some View {
         TabView {
-            TelaDeRegistracao()
+            TelaNotificacoes()
                 .tag(0)
                 .tabItem {
-                    Label("Main", systemImage: "square.fill")
+                    Label("Main", systemImage: "house.fill")
                 }
             
-            TelaDeLogin()
+            TelaForum()
                 .tag(1)
                 .tabItem {
-                    Label("Secundaria", systemImage: "circle.fill")
+                    Label("Turma", systemImage: "person.3.fill")
                 }
-         }
+        }
     }
 }
 

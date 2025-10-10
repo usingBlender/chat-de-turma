@@ -1,6 +1,8 @@
 import Foundation
 
-struct Mensagem {
+struct Mensagem: Identifiable {
+    var id:UUID = .init()
+    
     var mensagemID:UUID
     var usuarioID:UUID
 
