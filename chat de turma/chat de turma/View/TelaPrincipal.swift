@@ -27,6 +27,18 @@ struct TelaPrincipal: View {
                 .tabItem {
                     Label("Turma", systemImage: "person.3.fill")
                 }
+            
+            TelaCanal()
+                .tag(2)
+                .tabItem {
+                    Label("Canal", systemImage: "megaphone.fill")
+                }
+            
+            TelaChat()
+                .tag(3)
+                .tabItem {
+                    Label("Chat", systemImage: "graduationcap.fill")
+                }
         }
     }
 }
