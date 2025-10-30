@@ -9,9 +9,9 @@ import SwiftUI
 
 struct TelaChat: View {
     @State var mensagensPreset:[Mensagem] = [
-        Mensagem(mensagemID: .init(), usuarioID: .init(), conteudo: .init(conteudo: "Ei galera, e o conteudo, como fica?", tipo: .mensagem)),
+        Mensagem(mensagemID: .init(), usuarioID: .init(), conteudo: .init(conteudo: "Ei professor, eu perdi a aula de ontem, era importante?", tipo: .mensagem)),
         
-        Mensagem(mensagemID: .init(), usuarioID: .init(), conteudo: .init(conteudo: "Sei não pae", tipo: .mensagem))
+        Mensagem(mensagemID: .init(), usuarioID: .init(), conteudo: .init(conteudo: "Era só o conteúdo da prova, nada de mais.", tipo: .mensagem))
     ]
     
     @State var isEnviarSheetOpen:Bool = false

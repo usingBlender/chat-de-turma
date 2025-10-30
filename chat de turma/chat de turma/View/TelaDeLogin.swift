@@ -19,8 +19,9 @@ struct TelaDeLogin: View {
                 .frame(height: 250)
                 .padding(.horizontal, 30)
                 .overlay{
-                    Text("Logo.png")
-                        .foregroundStyle(Color.white)
+                    Image("logo")
+                        .clipShape(RoundedRectangle(cornerRadius: 20))
+                        .scaledToFill()
                 }
             
             // Lista de inputs
@@ -50,6 +51,7 @@ struct TelaDeLogin: View {
             .scrollContentBackground(Visibility.hidden)
             
             // Botões
+            /*
             Button(
                 action: {
                     UserDefaults.standard.setValue(pantryID, forKey: "PantryID")
@@ -72,6 +74,20 @@ struct TelaDeLogin: View {
                         }
                 }
             )
+            */
+            NavigationLink {
+                TelaPrincipal()
+                    .toolbar(.hidden, for: .navigationBar)
+            } label: {
+                RoundedRectangle(cornerRadius: 67.69)
+                    .frame(height:35.69)
+                    .foregroundStyle(Color.blue)
+                    .padding(.horizontal,67)
+                    .overlay{
+                        Text("Entrar")
+                            .foregroundStyle(Color.white)
+                    }
+            }
             
             NavigationLink {
                 TelaDeRegistracao()
